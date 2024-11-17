@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto; /* Positions the button at the bottom */
+  }
+  
+  button {
+    position: relative;
+    padding: 15px 40px;
+    background: #00f7ff;
+    font-size: 18px;
+    font-weight: 600;
+    color: #181818;
+    border: 3px solid #00e1ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 30px; /* Adjust if you want some space */
+    text-transform: uppercase; /* Makes the button text uppercase */
+  }
+  
+  button:hover {
+    background: transparent;
+    color: #00f7ff;
+    box-shadow: 0 0 15px #02ffdd, 0 0 25px rgba(57, 166, 255, 0.411);
+    transform: translateY(-3px); /* Lifts the button on hover */
+  }
+  
+  button:active {
+    transform: translateY(1px); /* Adds a subtle press effect */
+  }
+  
+  .star-1, .star-2, .star-3, .star-4, .star-5, .star-6 {
+    position: absolute;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #83aaff);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+    opacity: 0; /* Initially hidden */
+  }
+  
+  button:hover .star-1 {
+    top: -30%;
+    left: -10%;
+    width: 30px;
+    opacity: 1; /* Makes the star visible on hover */
+    filter: drop-shadow(0 0 10px #fffdef);
+  }
+  
+  button:hover .star-2 {
+    top: -20%;
+    left: 5%;
+    width: 20px;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fffdef);
+  }
+  
+  button:hover .star-3 {
+    top: 15%;
+    left: 25%;
+    width: 22px;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fffdef);
+  }
+  
+  button:hover .star-4 {
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fffdef);
+  }
+  
+  button:hover .star-5 {
+    top: 60%;
+    left: 80%;
+    width: 22px;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fffdef);
+  }
+  
+  button:hover .star-6 {
+    top: 70%;
+    left: 15%;
+    width: 28px;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fffdef);
+  }
+  
+  .fil0 {
+    fill: #fffdef;
+  }
+  
+  footer {
+    margin-top: auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    header {
+      margin-bottom: 30px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  
+    button {
+      padding: 12px 30px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+      line-height: 1.3;
+    }
+  
+    button {
+      padding: 10px 25px;
+      font-size: 14px;
+    }
+  }
+  
